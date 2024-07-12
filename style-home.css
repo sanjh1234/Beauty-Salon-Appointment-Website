@@ -1,0 +1,236 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    background-color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+h3{
+    color: rgb(36, 65, 117);
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 1.9cm;
+}
+h5{
+    text-decoration-line: underline;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding-top: 5px;
+    background-color:rgb(250, 186, 186);
+    z-index: 9;
+}
+#heading{
+    
+    background-color:rgb(250, 186, 186);
+    display: inline-flex;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    display: inline;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#titles{
+    color: crimson;
+    background-color:rgb(250, 186, 186);
+    font-size: xxx-large;
+    font-family:"Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#subtitle{
+    font-size: small; 
+    color: black;
+    background-color:rgb(250, 186, 186);
+    margin-top: 1.5cm;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+#navbar{
+    background: #000000d5;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navele{
+    background-color: rgb(39, 180, 126);
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    flex: 0 1 auto;
+    list-style: none;
+}
+main{
+    margin-top: 4.4cm;
+}
+
+#intro{
+    background-color: rgba(233, 150, 122, 0.596);
+    padding: 10px;
+    border-radius: 2pc;
+    text-align: center;
+}
+#images{
+    /* overflow: visible; */
+    margin-top: 1cm;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 1cm 10px 0 10px;
+    
+}
+.brideImage{
+    height: 7cm;
+    margin: 15px;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.515);
+}
+#services{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#services p{
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 0;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.738);
+}
+.serviceimg{
+    display: inline-block;
+    flex: 0 1 auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 4cm;
+    width: 3cm;
+    border: 2px solid black;
+}
+.serviceEle:hover{
+    p{
+        position: relative;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .serviceimg{
+        filter: blur(2px);
+        border: none;
+    }
+}
+
+#foot{
+    color: rgb(240, 219, 211);
+    background: crimson;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#foot div{
+    background: crimson;
+    display: block;
+}
+.footcontent{
+    display: block;
+    background: crimson;
+}
+#footImgdiv{
+    display: inline;
+    position: absolute;
+    left: 65%;
+    bottom: 1.5cm;
+}
+#footImgdiv a{
+    display: inline;
+}
+#footImgdiv a:hover{
+    img{
+        width: 3rem;
+    }
+}
+.footImg{
+    background: crimson;
+    display: inline;
+    width: 32px;
+    padding-left: 10px;
+}
+#rights{
+    display: block;
+    margin-top: 3px;
+    background: crimson;
+}
+
+#whatsapp{
+    margin-right: 0;
+    position: fixed;
+    right: .5cm;
+    bottom: .5cm;
+    z-index: 9;
+    background: none;
+}
+#whatsapp a{
+    background: none;
+}
+#whatsappimg{
+    width: 50px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 50%;
+}
+#whatsappimg:hover{
+        border: 2px solid white;
+        width: 3.5rem;
+}
+
+hr{
+    width: 100%;  
+}
+a{
+    color: rgb(39, 180, 126);
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+@media (max-width: 500px) {
+    #services{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+::-webkit-scrollbar{
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #838383;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(233, 150, 122);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ab4545;
+}
